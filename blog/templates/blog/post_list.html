@@ -11,15 +11,16 @@
         </div>
 
         <div>
-            <p>published: 14.4.2021, 4:52</p>
-            <h2><a href="">My first post</a></h2>
-            <p>I am Ryuta </p>
+            {% for post in posts %}
+                {{ post }}
+            {% endfor %}
+            {{a}}
         </div>
 
-        <div>
+        <!-- <div>
             <p>published: 14.4.2021, 4:58</p>
             <h2><a href="">My second post</a></h2>
-            <p> We are Ryuta</p>
-        </div>
+            <p> We are Ryuuuuuuuuuuuuuta</p>
+        </div> -->
     </body>
 </html>
