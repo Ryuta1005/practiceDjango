@@ -10,17 +10,13 @@
             </a></h1>
         </div>
 
-        <div>
-            {% for post in posts %}
-                {{ post }}
-            {% endfor %}
-            {{a}}
-        </div>
-
-        <!-- <div>
-            <p>published: 14.4.2021, 4:58</p>
-            <h2><a href="">My second post</a></h2>
-            <p> We are Ryuuuuuuuuuuuuuta</p>
-        </div> -->
+        
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h2><a href="">{{ post.title }}</a></h2>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
     </body>
 </html>
